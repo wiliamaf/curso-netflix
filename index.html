@@ -3,22 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="./js/main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+   
+    <!-- Carrossel do owl -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
     <title>.:Página Inicial do Netflix:.</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h2>NETFLIX</h2>
+            <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Início</a>
-                <a href="#">Filmes</a>
                 <a href="#">Séries</a>
-                <a href="#">Documentários</a>
+                <a href="#">Filmes</a>
+                <a href="#">Mais recentes</a>
+                <a href="#">Minha lista</a>
             </nav>
         </div>
     </header>
+    <!-- Semântica indicando o conteúdo principal -->
+    <main>
+        <div class="filme-principal">
+            <!-- Faz o envelopamento (wrapper) -->
+            <div class="container">
+                <h3 class="titulo">ONISCIENTE</h3>
+                <h4 class="subtitulo">Assista a nova temporada</h4>
+                <p class="descricao">Numa cidade onde os cidadãos são monitorados 24 horas por dia, uma mulher precisa enganar seu drone de vigilância para investigar um assassinato.</p>
+                <div class="botoes">
+                    <!-- role: qualquer dispositivo entende q é um botão -->
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>Assistir
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i> Mais informações
+                    </button>
+                </div>
+            </div>
+            <!-- Classificação etária -->
+            <div class="box-idade">
+                <div class="idade">18</div>
+            </div>
+        </div>
 
+    </main>
+
+
+    <div class="carrossel-1">
+        <h4 class="carrossel-titulo">Minha lista</h4>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/a-01.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-02.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-03.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-04.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-05.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-06.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-07.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-08.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-09.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/a-10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="carrossel-2">
+        <h4 class="carrossel-titulo">Populares na netflix</h4>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/b-01.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-02.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-03.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-04.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-05.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-06.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-07.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-08.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-09.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/b-10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Arquivos JavaScript carregados no final-->
+    <!-- Ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/d1c52c4da2.js" crossorigin="anonymous"></script>
+  
+    <!-- Jquery owl importados -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    
+    <!-- Javascript deve ser colocado por último-->
+    <script src="js/owl/setup.js"></script>
+    
 </body>
 </html>

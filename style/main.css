@@ -1,0 +1,166 @@
+/*VARIÁVEIS*/
+:root
+{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/* ZERANDO VALORES (PONTO ZERO) */
+*
+{
+    margin: 0;
+    padding: 0;
+    /*os elementos não utrapassam os limites definidos para as bordas*/
+    box-sizing: border-box; 
+}
+
+body
+{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: snow;
+}
+
+/*elemento html e classe definida*/
+header .container
+{
+    display: flex;
+    flex-direction: row; /*sentido do alinhamento*/
+    align-items: center; /* alinhamento vertical */
+    justify-content: space-between; /* alinhamento horizontal*/
+}
+
+header .logo
+{
+    color: var(--vermelho);
+    font-family: fantasy,Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900; /*peso da fonte (nível de negrito)*/
+    font-size: 40px;
+}
+
+/* Elementos html sem classe */
+header nav a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; /*Remover sublinhado dos links*/
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/* Mudar a cor quando passar o mouse */
+header nav a:hover
+{
+    color:#fff;
+}
+
+.filme-principal
+{
+    font-size:16px;
+    /* Definir uma fina camada com gradiente sobre a imagem de fundo */
+    background-image: linear-gradient(rgba(0, 0, 0,.5),rgba(0, 0, 0,.5) 100%), url("../img/principal.jpg");
+    
+    /*tamanho da imagem de fundo pegando a área de cobertura da caixa*/
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.container
+{
+    margin-left: 15px;
+}
+
+.filme-principal .container
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.filme-principal .titulo
+{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.filme-principal .subtitulo
+{
+    margin-bottom: 8px;
+}
+
+.filme-principal .descricao
+{
+    font-size: 11pt;
+    margin-bottom: 15px;
+}
+
+.filme-principal .botoes
+{
+    margin-top: 20px;
+}
+
+.filme-principal .botao
+{
+    background-color: rgba(50,50,50,.5);
+    color: rgb(236, 237, 231);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: none;
+    /* mudar o tipo do cursor quando passar sobre */
+    cursor: pointer;
+    /* tempo de transição do efeito */
+    transition: .2s ease all;
+}
+
+/*Quando passar o mouse sobre*/
+.filme-principal .botao:hover
+{
+    background-color: lavender;
+    color: rgb(28, 29, 27);
+}
+
+/* ícones do fonte awesome */
+.filme-principal .botao i
+{
+    margin-right: 8px;
+}
+/* Classificação etária */
+.filme-principal .box-idade
+{
+    margin-left:auto;
+    padding-left: 15px;
+    padding-right: 50px;
+    /* border: 1px solid black; */
+    border-left: 4px solid rgb(204, 199, 199);
+    background-color: #33333399;
+}
+
+.filme-principal .idade
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    background-color: var(--preto);
+    padding: 3px;
+}
+
+.carrossel-1 .carrossel-2
+{
+    margin-top:10px;
+}
+
+.carrossel-titulo
+{
+    margin: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carrosel-1 .item .carrossel-2 .item
+{
+   display:block;
+}
